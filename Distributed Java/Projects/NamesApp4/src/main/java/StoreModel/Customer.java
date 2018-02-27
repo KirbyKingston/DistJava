@@ -5,18 +5,20 @@ package StoreModel;
  * @author Mitch
  */
 public class Customer {
+
     private String fName;
     private String lName;
     private String email;
     private String id;
 //Customer has a cart.. Figure this out later...
-    public Customer(String fName, String lName, String email, String id){
+
+    public Customer(String fName, String lName, String email, String id) {
         setfName(fName);
         setlName(lName);
         setEmail(email);
         setId(id);
     }
-    
+
     public final String getfName() {
         return fName;
     }
@@ -48,5 +50,5 @@ public class Customer {
     public final void setId(String id) {
         this.id = id;
     }
-    
+
 }

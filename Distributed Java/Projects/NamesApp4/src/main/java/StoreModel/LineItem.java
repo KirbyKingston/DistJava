@@ -1,6 +1,7 @@
 package StoreModel;
 
 import java.util.Objects;
+
 /**
  *
  * @author Mitch
@@ -9,7 +10,6 @@ public class LineItem {
 
     public final static String REQUIRED_MSG = "This is an invalid value.";
 
-    
     private Product product;
     private int qty;
     private double lineItemSubtotal;
@@ -19,7 +19,7 @@ public class LineItem {
         setQty(qty);
         lineItemSubtotal = getCostBeforeDiscountLineTotal();
     }
-    
+
     public final Product getProduct() {
         return product;
     }
@@ -31,7 +31,6 @@ public class LineItem {
 //    public final String displayLineItem() {
 //        return (product.getDescription() + product.getUnitCost() + getDiscountAmt() + getDiscountAmtLineTotal() + getYouSavedLineTotal());
 //    }
-
     public final double getCostBeforeDiscount() {
         return product.getUnitCost();
     }
@@ -51,7 +50,6 @@ public class LineItem {
 //    public final double getYouSavedLineTotal() {
 //        return getCostBeforeDiscountLineTotal() - getDiscountAmtLineTotal();
 //    }
-
     public final int getQty() {
         return qty;
     }
@@ -97,5 +95,4 @@ public class LineItem {
         return "LineItem{" + "product=" + product + ", qty=" + qty + '}';
     }
 
-    
 }

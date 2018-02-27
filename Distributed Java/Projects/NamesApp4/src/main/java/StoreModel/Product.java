@@ -7,27 +7,25 @@ import java.util.Objects;
  * @author Mitch
  */
 public class Product {
-    
+
     public final static String REQUIRED_MSG = "This is a required field.";
-    
+
     private String id;
     private String description;
     private double unitCost;
-    
 
     public Product(String id, String description, double unitCost) {
         setId(id);
         setDescription(description);
         setUnitCost(unitCost);
     }
-    
 
     public final String getId() {
         return id;
     }
 
     public final void setId(String id) {
-        if(id == null || id.isEmpty()) {
+        if (id == null || id.isEmpty()) {
             throw new IllegalArgumentException(REQUIRED_MSG);
         }
         this.id = id;
@@ -38,7 +36,7 @@ public class Product {
     }
 
     public final void setDescription(String description) {
-        if(description == null || description.isEmpty()) {
+        if (description == null || description.isEmpty()) {
             throw new IllegalArgumentException(REQUIRED_MSG);
         }
         this.description = description;
@@ -49,8 +47,9 @@ public class Product {
     }
 
     public final void setUnitCost(double unitCost) {
-        if (unitCost < 0)
+        if (unitCost < 0) {
             throw new IllegalArgumentException(REQUIRED_MSG);
+        }
         this.unitCost = unitCost;
     }
 
@@ -83,5 +82,5 @@ public class Product {
     public final String toString() {
         return "Product{" + "id=" + id + ", description=" + description + ", unitCost=" + unitCost + '}';
     }
-   
+
 }

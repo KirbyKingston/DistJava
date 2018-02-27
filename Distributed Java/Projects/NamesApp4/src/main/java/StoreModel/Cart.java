@@ -7,6 +7,7 @@ import java.util.ArrayList;
  * @author Mitch
  */
 public class Cart {
+
     private ArrayList<LineItem> cartItems;
     private double cartTotal;
 
