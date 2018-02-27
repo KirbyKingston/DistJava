@@ -40,7 +40,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="StoreController/ProductController?search= ">Products</a>
+                            <a class="nav-link" href="ProductController?search= ">Products</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="cart.jsp">Cart</a>
